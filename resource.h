@@ -1,0 +1,121 @@
+#define IDI_ICON3	3
+#define IDI_ICON2	2
+#define IDI_ICON1	1
+#define IDD_LETTER_DIALOG	107
+#define IDC_UPDOWN_COLUMN	101
+#define IDC_UPDOWN_LINE	102
+#define IDC_LINE	103
+#define IDC_COLUMN	104
+#define IDC_LETTER_LIST	105
+#define IDC_LETTER_TEXT	106
+#define IDC_GROUPBOX5	110
+#define IDC_GROUPBOX4	109
+#define IDC_GROUPBOX3	108
+#define IDC_GROUPBOX2	107
+#define IDC_EDIT3	105
+#define IDC_EDIT2	103
+#define IDC_EDIT1	102
+#define IDC_LISTBOX1	101
+#define IDB_BITMAP7	114
+
+// идентификаторы ресурсов
+#define NumbMenuItem     41
+#define IDM_MENU1        100
+#define IDM_START_DEMO	11859
+#define CM_POPUPITEM3	18874
+#define CM_ITEM3	18873
+#define IDM_OPEN_FOLDER	11858
+#define CM_ITEM2	18873
+#define IDM_MULTYINSTANCE	11958
+#define CM_ITEM1	18873
+#define IDM_VIEWDIR	11858
+#define IDM_ITEM1	18873
+#define CM_POPUPITEM1	 100
+#define CM_POPUPITEM2	 101
+#define IDM_ABOUT        11842
+#define IDM_EXIT         11843
+#define IDM_NEW          11844
+#define IDM_OPEN         11845
+#define IDM_SAVE         11846
+#define IDM_SAVE_AS      11847
+#define IDM_FEATURES     11848
+#define IDM_UNDO         11849
+#define IDM_DELDIG       11850
+#define IDM_CLEARFIELD   11851
+#define IDM_CORRECTED    11852
+#define IDM_CALCULATE    11853
+#define IDM_MAX          11854
+#define IDM_MIN          11855
+#define IDM_STATUSBOX    11856
+#define IDM_NORM         11857
+#define IDM_CLEARMASK    11860
+#define IDM_SCLEFT       11861
+#define IDM_SCRIGHT      11862
+#define IDM_SCUP         11863
+#define IDM_SCDOWN       11864
+#define IDM_CLEARMARK    11865
+#define IDM_CHARACTERISTICS 11866
+#define IDM_DIAGONALPOTTING 11867 // WM_COMMAND
+#define IDM_AUTOCLEAR	 11868
+#define IDM_VIEWPICTURES 11869
+#define IDM_VIEWWEB		 11870
+#define IDM_WEB5x5		 11871
+#define IDM_VIEWLOG		 11872
+#define IDM_PRINT			 11873
+#define IDM_HELP			 11874
+#define IDM_CHOOSEFONT	 11875 // WM_COMMAND
+#define IDM_REDO			 11876 // WM_COMMAND
+#define IDC_ENDCALC		 11877 // WM_COMMAND
+#define IDM_MAKEOVERLAPED 11878 // WM_COMMAND
+#define IDM_DEMO			 11879 // WM_COMMAND
+#define IDM_TOOLBAR		 11884 // WM_COMMAND
+#define IDC_WORKNOLOGIC	 11885 // WM_COMMAND
+#define IDM_CPASTE		 11886 // WM_COMMAND
+#define IDM_CCOPY			 11887 // WM_COMMAND
+#define MY_CREATER		 11889
+
+#define IDC_FONT			 11878
+#define IDC_CELLSIZE	    11879
+#define IDC_UPDOWN1	    11880
+#define IDD_FILE			 11882
+#define IDD_CANCEL       11883
+
+#define IDC_ACCELERATORS 100
+#define IDD_DIALOG1      106
+#define IDC_BUTTON1	103
+#define IDD_WEBADDR		 113
+#define IDD_MAILTO		 114
+#define IDC_STATICTEXT2	104
+#define IDC_STATICFRAME1	102
+#define IDD_DIALOG_FEATURES 108
+#define IDC_GROUPBOX1	101
+#define IDD_IMPORT_DIALOG 109
+#define IDC_STATICFRAME4	104
+#define IDC_BUTTON2	104
+#define IDC_STATICFRAME3	103
+#define IDC_STATICFRAME2	101
+#define HORIZONTAL      120
+#define VERTICAL			121
+#define MAXHORIZ        122
+#define MAXVERT         123
+#define IDC_UPDOWNVERTICAL	124
+#define IDC_UPDOWNHORIZONTAL	125
+#define IDC_UPDOWNMAXHORIZ	126
+#define IDC_UPDOWNMAXVERT	127
+#define CHECK_BOX1      132
+#define ID_STATUSBOX    133
+#define IDC_RADIOBUTTON1 134
+#define IDC_RADIOBUTTON2 135
+#define IDC_IMPMARK     136
+#define IDC_IMPPICT     137
+#define IDC_IMPDIG      138
+#define IDC_IMPWEB      139
+
+#define IDB_BITMAP_TOOL1 107
+#define IDB_BITMAP2      109
+#define IDB_BITMAP3      110
+#define IDB_BITMAP4      111
+#define IDB_BITMAP5      112
+#define IDB_BITMAP6      113
+
+

@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Flint's Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords" content="программа, японские кроссворды, формат jcc">
+</head>
+
+<body bgcolor="#DDFFFF" text="#000000">
+<h2 align="center"><font color="#FF0000"><u><b>Формат JCC-файлов</b></u></font></h2>
+<table width="550" border="1">
+  <tr>
+    <td width="190" align="center">Поле</td>
+    <td width="150" align="center">Размер (байт)</td>
+    <td width="220" align="center">Значение</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Заголовок</td>
+    <td width="150" align="center">5</td>
+    <td width="220" align="center">JAPAN</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Число цветов</td>
+    <td width="150" align="center">1</td>
+    <td width="220" align="center">2..16</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Цвета</td>
+    <td width="150" align="center">64</td>
+    <td width="220" align="center">16 цветов по 32 бита<br>(формат RGB)</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Размер по горизонтали<br>(HSize)</td>
+    <td width="150" align="center">1</td>
+    <td width="220" align="center">1..255</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Размер по вертикали<br>(VSize)</td>
+    <td width="150" align="center">1</td>
+    <td width="220" align="center">1..255</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Количество чисел слева<br>(HMaxNums)</td>
+    <td width="150" align="center">1</td>
+    <td width="220" align="center">0..255</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Количество чисел сверху<br>(VMaxNums)</td>
+    <td width="150" align="center">1</td>
+    <td width="220" align="center">0..255</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Пустой ли кроссворд<br>(Empty)</td>
+    <td width="150" align="center">1</td>
+    <td width="220" align="center">0, если есть рисунок;<br>что-то другое, если его нет.</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Числа сверху</td>
+    <td width="150" align="center">2*HSize*VMaxNums</td>
+    <td width="220" align="center">Слева направо, сверху вниз:<br>число, потом номер цвета.</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Числа слева</td>
+    <td width="150" align="center">2*VSize*HMaxNums</td>
+    <td width="220" align="center">Сверху вниз, слева направо:<br>число, потом номер цвета.</td>
+  </tr>
+  <tr>
+    <td width="190" align="center">Рисунок</td>
+    <td width="150" align="center">2*HSize*VSize</td>
+    <td width="220" align="center">Сверху вниз, слева направо:<br>номер цвета.</td>
+  </tr>
+</table>
+<br>
+<font color="#00A000"><u><b>Пояснения:</b></u></font>
+<ol>
+  <li><p align="justify">
+   Цвета записаны в 32-битном формате RGB, а именно: первые 3 байта -
+   интенсивности красного, зеленого и синего цветов соответственно, а
+   четвертый – 0 (дополнительный байт). Можно было бы его убрать, но
+   стоит ли усложнять программу ради экономии 16-ти байт?</p>
+  </li>
+  <li><p align="justify">
+   Поле Empty означает, пустой ли кроссворд, т.е. есть ли в нем
+   рисунок (его значение не зависит от того, есть ли в кроссворде
+   какие-либо числа, только сам рисунок). Если это поле не равно 0,
+   то поле “Рисунок” в кроссворде отсутствует.</p>
+  </li>
+  <li><p align="justify">
+   В кодировании чисел и рисунка используются не сами цвета, а их
+   номера в таблице цветов. Первый цвет – это всегда цвет фона, он
+   кодируется значением 0. В полях чисел такой цвет имеют только пустые
+   поля (содержащие число 0 и отображающиеся пустыми клетками).</p>
+  </li>
+  <li><p align="justify">
+   Если число зачеркнуто, у него устанавливается старший бит в 1,
+   иначе говоря, прибавляется 128.</p>
+  </li>
+  <li><p align="justify">
+   В поле рисунка крестики кодируются числом 255.</p>
+  </li>
+</ol>
+<p align="justify">
+PS: Если у вас остались какие-то вопросы, пишите мне: <a href="mailto:flint_inc@pochtamt.ru">flint_inc@pochtamt.ru</a>.
+Я отвечу и дополню этот документ, если что-то было упущено.</p>
+<p align="right">С уважением, Власов К.А.</p>
+<p align="center">
+  <SCRIPT LANGUAGE="JavaScript">
+  function goHist(a)
+  {
+     history.go(a);
+  }
+  </script>
+  <FORM METHOD="post">
+  <INPUT TYPE="button" VALUE="Назад" onClick="goHist(-1)">
+  </form>
+</p>
+</body>
+</html>
+
